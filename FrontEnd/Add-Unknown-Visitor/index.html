@@ -1,0 +1,65 @@
+<html>
+   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.418.0.min.js"></script>
+	<script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+	<script type="text/javascript" src="apigClient.js"></script>
+    <script src="main.js"></script>
+      <style>
+         input[type=text], input[type=password],button {
+            width: 100%;
+            padding: 5px 5px;
+            margin: 5px 0;
+            box-sizing: border-box;
+         }
+         #maincontainer {
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+         }
+         div#userregistration {
+            width: 60%;
+            float: left;
+         }
+         div#userdisplay {
+            margin-left: 60%;   
+         }
+      </style>
+   </head>
+   
+   <body>
+      <div id="maincontainer">
+         <div id="visiterregistration">
+            <h1>User Registration Form</h1>
+            <table border="0">
+               <tr>
+                  <td><b>Name<span style="color:red;">*</span> : </b></td>
+                  <td><input type="text" value="" name="name" id="name" /></td>
+                  <td id="tdname" style="display:none;"><span style="color:red;">Enter Name</span></td>
+               </tr>
+               <tr>
+                  <td><b>Mobile No<span style="color:red;">*</span> : </b></td>
+                  <td><input type="text" name="mphone" id="mphone"/></td>
+                  <td id="tdmphone" style="display:none;"><span style="color:red;">Enter Mobile Number</span></td>
+               </tr>   
+               <tr>
+                  <td></td>
+                  <td><button onClick="service(document.getElementById('name').value, document.getElementById('mphone').value)">Add Entry</button></td>	 
+                  <td></td>
+               </tr>
+            </table>
+         </div>
+
+      </div>
+
+   </body>
+</html>
