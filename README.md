@@ -9,7 +9,7 @@
 •	For every unknown face detected by Rekogniton, send an SMS to the “owner” a photo of the visitor. The text message should also include a link to approve access for the visitor.
 ## ABOUT
 This project is a part of the project component for the course- Cloud Computing and Applications (CS-GY 9223, New York University) 
-## Authors: Indraneel Ray , Hemanth Teja, Vivek Kumar & Durga Prasad
+## Authors: Indraneel Ray , Hemanth Teja
 ## ARCHITECHTURE :- 
  ![alt text](https://github.com/HemanthTejaY/Smart-Door---Amazon-Kinesis/blob/master/Architecture/architecture-kinesis.JPG)
 
